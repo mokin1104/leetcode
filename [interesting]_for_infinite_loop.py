@@ -8,7 +8,6 @@ print(list_test)
 所以，如果在循环中不断往list_test里追加元素，迭代器会继续访问新加的元素
 """
 
-
 # Answer 1
 list_test = ['python', 'developer']
 result = list_test + [i.upper() for i in list_test]
@@ -40,4 +39,3 @@ for i in list_test[:]:
 
 print(list_test)
 # ['python', 'developer', 'PYTHON', 'DEVELOPER']
-
