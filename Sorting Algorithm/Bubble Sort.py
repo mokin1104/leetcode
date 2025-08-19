@@ -1,5 +1,8 @@
 import random
 
+# Bubble Sort repeatedly compares and swaps adjacent elements, ensuring that after each pass the largest remaining element “bubbles” to its final position at the end of the list.
+
+
 # 随机生成一个长度为 10，范围在 -100 到 100 的整数列表
 random_list = [random.randint(-100, 100) for _ in range(10)]
 
