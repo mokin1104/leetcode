@@ -6,13 +6,13 @@ import random
 # 随机生成一个长度为 10，范围在 -100 到 100 的整数列表
 random_list = [random.randint(-100, 100) for _ in range(10)]
 
-print("origin random list is: ", random_list)
+print("the origin random list is: ", random_list)
 
 for i in range(0, len(random_list) - 1):
     for j in range(0, len(random_list) - i - 1):
         if random_list[j] > random_list[j + 1]:
             random_list[j], random_list[j + 1] = random_list[j + 1], random_list[j]
-print(random_list)
+print("after sorting, the random_list is: ", random_list)
 
 """
 冒泡排序的核心思想：通过不断比较相邻元素并交换，把较大的（或较小的）元素逐步“冒”到区间的一端
